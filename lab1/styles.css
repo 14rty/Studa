@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+header {
+    margin-left:auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    font-weight: bold;
+    
+}
+main p {
+    text-align: justify;
+}
+.container {
+    max-width: 70%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-family: 'Libre Baskerville', serif;
+    margin: 0 auto;
+}
+.main-menu {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.main-menu li {
+    display: inline;
+    margin-right: 10%;
+    margin-left: 14%;
+}
+.main-menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.avatar {
+    height: 250px;
+    margin-left: 0;
+    /* float: left; */
+    
+}
+.avatar img {
+    height: 100%;
+}
+
+.myTech {
+    height: 100px;
+    margin-left: 0;
+}
+.myTech img {
+    height: 100%;
+    
+}
+.footer {
+    background-image: url(images/lab1footerback.png);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    margin-left: 15%;
+
+}
+
+
+.flex{
+    display: flex;
+}
+
+
