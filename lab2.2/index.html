@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Auth</title>
+    <style>
+        body {
+         background: #c7b39b url(images/backlab.jpg); 
+         color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form method="POST" action="https://httpbin.org/post" >
+            <div class="authForm">
+                <label for="userName">Username</label><br>
+                <input type="text" id="userName" name="userName" size="25" required>
+            </div>
+            <div class="authForm">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" size="25" required>
+            </div>
+            <div class="authForm">
+                <label for="remember">Remember Me on this page</label>
+                <input type="checkbox" id="remember" name="remember" value="remember">
+            </div>
+            <div class="authForm">
+                <input type="submit" value="Authorize"  style="background-color: black; color: white;" >
+            </div>
+        </form>
+    </div>
+</body>
+</html>
