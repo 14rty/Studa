@@ -1,14 +1,57 @@
 <!DOCTYPE html> 
 <html lang="ru">
     <head>
-        <meta charset="UTF -8">
-        <title>Web Deweloper</title> 
+        <meta charset="UTF-8">        
+        <title>Форма обратной связи</title>
         <link rel="stylesheet" href="styles.css">
     </head>
  <body>
-  <h1>Заголовок</h1>
-  <!-- Комментарий -->
-  <p>Первый абзац.</p>
-  <p>Второй абзац.</p>
+    <div class="title">
+        <h1>Форма обратной связи</h1>
+    </div>
+
+    <form method="POST" action="https://httpbin.org/post" enctype="multipart/form-data">
+        <div class="contentForm">
+            <div class="form-group">
+                <label for="fio">ФИО</label>
+                <input type="text" id="fio" name="fio" value="Иванов Иван Иванович"  required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email"id="email" name="email" placeholder="ivan@mail.ru" required>
+            </div >  
+            
+            <div class="form-group-how">
+                <p>Как вы о нас узнали?</p>
+                <input type="radio" id="advertising" name="source" value="advertising" >
+                <label for="advertising">Реклама</label>
+                <input type="radio" id="friends" name="source" value="friends" >
+                <label for="friends">Друзья</label>
+            </div>
+            <div class="form-group">
+                <label for="msg">Текст сообщения</label>
+                <textarea name="msg" id="msg" cols="30" rows="2">Текст</textarea>
+            </div>
+            <div class="form-group">
+
+            </div>
+                <label for="category">Категорияя обращения</label>
+                <select name="category" id="category">
+                    <option value="proposal">Предложение</option>
+                    <option value="feedback" selected>Отзыв</option>
+                </select>
+                <div class="form-group">
+                    <label for="agreement">Согласен на обработку персональных данных</label>
+                    <input type="checkbox" name="agreement" id="agreement"  checked>
+                </div>
+                <div class="form-group">
+                    <label for="attachment">Вложение</label>
+                    <input type="file" name="attachment" id="attachment">
+                </div>
+            <div class="form-group">
+                <input type="submit" value="Отправить" style="color: brown;">
+            </div>
+        </div>
+    </form>
  </body>
 </html>
