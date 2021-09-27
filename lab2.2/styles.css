@@ -5,10 +5,10 @@
 .content {
     margin-top: 17.5%;    
     border: 2px double white;
-    /* background:; */
+    
     padding: 1px;
-    max-width:min-content;
-    margin-left: 40%;
-    margin-right: 40%;
-
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
 }
