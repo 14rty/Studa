@@ -1,16 +1,23 @@
 body {
+    display: flex;
     margin: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    position: relative;
+    flex-direction: column;
+    /* position: relative; */
 }
-body::after{
+/* body::after{
     display: block;
     content: "";
     height: 68px;
-}
+} */
+
 *, *::before, *::after{
     box-sizing: border-box;
+}
+
+.header ul{
+    display: flex;
 }
 .header {
     background-color: rgb(138, 44, 138);
@@ -44,10 +51,14 @@ body::after{
     background-color: rgb(255, 255, 255);
     padding-top: 1px;
     padding-bottom: 1px;
+    flex-grow: 1;
 }
 .container{
     width: 95%;
     margin: 0 auto;
+}
+.flexWrapper{
+    display: flex;
 }
 .sideBarSection{
     margin-bottom: 20px;
@@ -61,42 +72,49 @@ body::after{
 .sideBar{
     padding: 20px 20px 20px 0px;
     width: 200px;
-    float: left;
-    position: fixed;
+    /* position: fixed; */
     margin-top: 50px;
-    z-index: 1;
+    /* z-index: 1; */
+    flex-shrink: 0;
 }
 .navigation{
-    float: left;
+    flex-grow: 1;
 }
 .profile{
-    float: right;
+   margin-left: auto;
 }
-.clearfix::after{
+/* .clearfix::after{
     content: "";
     display: block;
     clear: both;
-}
+} */
 .productsCategoryHeader{
     margin-top: 0;
 }
 .pageContent{
     padding: 20px;
-    margin-left: 220px;
+    /* margin-left: 220px; */
+}
+
+.productsList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .productCard{
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
     width: 500px;
     height: 350px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(41, 41, 41);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-radius: 2px;
 }
 .productImage{
     width: 50%;
-    height: 100%;
-    float: left;
+    /* height: 100%; */
+    /* float: left; */
     overflow: hidden;
 }
 .productImage img{
@@ -107,9 +125,9 @@ body::after{
 }
 .productDetails{
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     padding: 20px;
-    float: right;
+    /* float: right; */
 }
 .productDetails header{
     font-size: 1.2rem;
@@ -170,11 +188,11 @@ button{
     border-top: 5px solid black;
     text-align: left;
     padding: 5px 0;
-    width: 100%;
+    /* width: 100%;
   
     position: absolute;
     
-    bottom: 0;   
+    bottom: 0;    */
 }
 .pgup{
     display: block;
@@ -186,4 +204,25 @@ button{
 }
 .pgup:hover{
     background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .header ul{
+        flex-direction: column ;
+        align-items: center;
+    }
+    .profile{
+        margin-left: 0;
+    }
+    .header{
+        position: static;
+    }
+    .header ul li{
+        padding: 5px;
+        margin-right: 0;
+    }
+    .sideBar{
+        position: static;
+    }
+    
 }
