@@ -31,10 +31,9 @@ img{
     flex-direction: column;
     display: flex;
     text-align: left; 
-    align-items: center;
-    
-    
+    align-items: center;    
   }
+  
 .card .img{
     order: 2;
 }
@@ -65,7 +64,7 @@ img{
     font-size: 30pt;
     bottom: 0px;
     color: blanchedalmond;
-
+    /* align-items: center; */
     border-right: 5px solid black;
 
 
@@ -87,11 +86,13 @@ img{
     font-size: 30pt;
     bottom: 0px;
     color: blanchedalmond;
-
+    /* align-items: center; */
     border-left: 5px solid black;
+    
 
 
 }
+
 
 
 /* .right a{

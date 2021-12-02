@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/main.js" defer></script>
+    <style>
+        html, body, pre, code, kbd, samp, button, input {
+            font-family: "Press Start 2P";
+        }
+      </style>
+    <title>Калькулятор</title>
+</head>
+<body>
+    <main>
+        <!-- Коробка открытие-->
+        <div class="calcucator">
+        <section class="nes-container with-title"><h3 class="title">Cacl</h3> 
+            <!-- <div id="texts" class="item"></div> -->
+            <section class="nes-damnass">
+            
+        
+         
+        <!-- Поле ввода-->
+            <div class="nes-field" style="text-align: center;">
+                <!-- <label for="name_field">What i need to calculate?</label> -->
+                <p class="nes-input"><span id="name_field" class="board"></span></p>
+            </div>
+
+            
+        <!-- Кнопочки -->
+            <div class="calc-buttons">
+                <div class="screen">
+                    <span></span>
+                </div>
+                
+                <div class="buttons">
+                    <section class="nes-container-digits">
+                        <div class="digits">
+                            <button class="key digit">1</button>
+                            <button class="key digit">2</button>
+                            <button class="key digit">3</button>
+                            <button class="key digit">4</button>
+                            <button class="key digit">5</button>
+                            <button class="key digit">6</button>
+                            <button class="key digit">7</button>
+                            <button class="key digit">8</button>
+                            <button class="key digit">9</button>
+                            <button class="key digit">0</button>
+                            <button class="key digit" style="justify-self: center;">.</button>
+                            
+                            <button class="key" style="visibility: hidden;"></button>
+                        </div>
+                    </section>
+                    <section class="nes-container-methods">
+                        <div class="other" style="margin-top: 3px;">
+                            <button class="key operation">+</button>
+                            <button class="key operation">-</button>
+                            <button class="key operation">*</button>
+                            <button class="key operation">/</button>
+                            <button class="key bracket">(</button>
+                            <button class="key bracket">)</button>
+                            <button class="key result">=</button>
+                            <button class="key clear">C</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        <!-- Поле вывода -->
+            <!-- <div class="nes-field is-inline">
+                <label for="inline_field">Output</label>
+                <input type="text" id="inline_field" class="nes-input is-success" placeholder="0" readonly>
+            </div> -->
+        <!-- Коробка закрытие -->
+            </section>
+        </section>
+        </div>
+    </main>
+</body>
+</html>
