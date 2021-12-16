@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru" class="bg-dark">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+    <title>DogSock</title>
+ 
+  </head>
+  <body>
+    <!-- Хэдер -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-light bg-light" >
+            <div class="container-fluid flex-nowrap" >
+                <a class="navbar-brand " href="#">
+                    <img src="images/logo.png" alt="logo" width="49" height="65" class="d-inline-block align-text-top">
+                </a>
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#">Меню</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Shop now</a>
+                        <a class="nav-link" href="#adress">Адреса</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="bg-dark" style="font-family: 'El Messiri', sans-serif;">
+          <!-- Верхняя колонка -->
+          <div class="banner py-3 py-lg-5 bg-light">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center text-lg-start d-flex justify-content-center flex-column">
+                        <p class="mt-30" style="font-size: 50px">Собачьи носочки!</p>
+                        <p>Забота со вкусом</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <img src="images/prettyOne.jpg" class="img-fluid rounded" alt="#">
+                    </div>
+                </div>
+              </div>
+            
+          </div>
+        
+        <!-- Центрльная колонка -->
+      <div class="banner py-3 py-lg-5 bg-dark">
+        <div class="container">
+          <div class="row"> 
+            <!-- карусель -->
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <img src="images/Mops.jpg" class="d-block img-fluid rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/zoom.jpg" class="d-block img-fluid rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/zoom-2.jpg" class="d-block img-fluid rounded" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>  
+      <!-- Описаие -->
+      <div class="banner py-3 py-lg-5 bg-light">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+              <img src="images/socks.png" class="img-fluid rounded" alt="#">
+            </div>
+
+              <div class="col-lg-6 text-center text-lg-start d-flex justify-content-center flex-column border border-5 border-dark border-end-0 border-top-0 border-bottom-0 " >
+                  <p class="mt-30 fs-1">Не скользят</p>
+                  <p>Мы используем первородный каучук для "подошвы". Носочки это не только комфорт и тепло, но и устойчивость вашего питомца в холодное время года.</p>
+
+                  <p class="mt-30 fs-1">Износостойкие</p>
+                  <p>С помощью разработанной нами технологии подкладка защищена от когтей, что обеспечивает наивысшую надежность на рынке.</p>
+
+                  <p class="mt-30 fs-1">Уникальные</p>
+                  <p>В конструкторе на сайте нашего <a href="#" class="text-reset">магазина</a> Вы можете создать неповторимый дизайн.</p>
+              </div>
+          </div>
+        </div>
+      
+    </div>    
+    <!-- Адрес -->
+    <div id="adress" class="contacts container ">
+      <div class="text-center py-5">
+          <p class="mb-3 fs-2 text-light">Наши адреса</p>
+          <div class="heading-line mx-auto"></div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6 mb-5">
+            <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8980.521586028648!2d37.6155965!3d55.756237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58d26b301983014c!2z0J7RhdC-0YLQvdGL0Lkg0KDRj9C0!5e0!3m2!1sru!2sru!4v1639680174412!5m2!1sru!2sru" width="100%" height="100%" style="border:0; min-height: 450px;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-lg-6 mb-5 text-light d-flex flex-column justify-content-evenly">
+            <p>
+              <img src="images/instLogo.png" alt="Instagram" style="width: 35px; height: 35px;"> <a href="#" class="text-reset text-decoration-none">@SockForPsina</a>
+            </p>
+            <p>
+              <img src="images/tlgLogo.png" alt="Telegram" style="width: 35px; height: 35px;"> <a href="#" class="text-reset text-decoration-none">@SockForPsina</a>
+            </p>
+            <p>
+              <img src="images/vkLogo.png" alt="VK" style="width: 35px; height: 35px;"> <a href="#" class="text-reset text-decoration-none">@SockForPsina</a>
+            </p>
+          </div>
+      </div>
+
+    </div>
+    </main>
+    <footer>
+      <div class="text-center py-5">
+        <a href="#">
+            <img src="images/logo.png" width="49" height="65" alt="logo">
+        </a>
+    </div>
+    </footer>
+    
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
